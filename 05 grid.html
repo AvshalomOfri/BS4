@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <title>BS4 tutorial</title>
+    <style>
+      /* The default responsive breakpoints of BS are 576,768,992 and 1200 px */
+      body {
+        background: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- grid -->
+    <!-- BS divides the view to 12 grid columns -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col bg-secondary">this is a single column</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!--because there are only two divs each div spans for 6 grid columns since 12/2 = 6-->
+        <div class="col bg-info">this is a single column</div>
+        <div class="col bg-warning">this is a single column</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- three divs means 12/3 = 4, thus each div spans over 4 grid columns -->
+        <div class="col bg-warning">this is a single column</div>
+        <div class="col bg-primary">this is a single column</div>
+        <div class="col bg-success">this is a single column</div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sm is the Small unit of measurement representing the 576px threshold -->
+        <!-- when the view gets wider than sm the divs will span according to the number specidied after sm -->
+        <!-- here the number is 6 therefore each div will span over 6 grid columns -->
+        <div class="col-sm-6 bg-warning">col-sm-6</div>
+        <div class="col-sm-6 bg-primary">col-sm-6</div>
+        <div class="col-sm-6 bg-success">col-sm-6</div>
+        <div class="col-sm-6 bg-secondary">col-sm-6</div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- here each div will span over 3 grid columns once they cross the md (Medium) threshold, and back to 6 after they cross the lg (Large) threshold -->
+        <div class="col-sm-6 col-md-3 col-lg-6 bg-danger">
+          col-sm-6 col-md-3 col-lg-6
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-6 bg-info">
+          col-sm-6 col-md-3 col-lg-6
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-6 bg-danger">
+          col-sm-6 col-md-3 col-lg-6
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-6 bg-info">
+          col-sm-6 col-md-3 col-lg-6
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- you could use odd numbers as dividers but it's ideal to set adjacent divs to be equal to 12 when summed together -->
+        <div class="col-sm-7 col-md-5 bg-warning">col-sm-7 col-md-5</div>
+        <div class="col-sm-5 col-md-7 bg-primary">col-sm-5 col-md-7</div>
+        <div class="col-sm-9 col-md-3 bg-success">col-sm-9 col-md-3</div>
+        <div class="col-sm-3 col-md-9 bg-secondary">col-sm-3 col-md-9</div>
+      </div>
+    </div>
+
+    <!-- non fluid con -->
+    <div class="container pt-2">
+      <div class="row">
+        <div class="col-sm-3 bg-warning">col-sm-3 non-fluid</div>
+        <div class="col-sm-6 bg-primary">col-sm-6 non-fluid</div>
+        <div class="col-sm-3 bg-success">col-sm-3 non-fluid</div>
+      </div>
+    </div>
+
+    <!-- nested divs -->
+    <div class="container pt-2">
+      <div class="row">
+        <div class="col-sm-3 bg-warning">col-sm-3 non-fluid</div>
+        <div class="col-sm-6 bg-primary">col-sm-6 non-fluid</div>
+        <div class="col-sm-3 bg-success">
+          col-sm-3 non-fluid
+          <div class="row">
+            <!-- the aspect size is relative to its parent element -->
+            <div class="col-sm-6 bg-info">col-sm6</div>
+            <div class="col-sm-6 bg-secondary">col-sm6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The available aspect classes are .col-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
