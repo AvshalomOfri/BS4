@@ -29,8 +29,8 @@
     <!--reminder: In BS, the row class is by default a flexbox container -->
     <!-- flexbox in BS -->
     <!-- To apply flexbox to a container add the "d-flex" class -->
-    <!-- justify content - hor -->
-    <!-- align items - ver -->
+    <!-- justify content - horizontal -->
+    <!-- align items - vertical -->
     <!-- only direct children are affected-->
     <!-- in order to use align-items there has to be a css rule (min-height) for setting the height parameter of the element in question -->
     <div class="container">
@@ -48,16 +48,18 @@
         <div class="col d-flex justify-content-around align-items-center">
           <p class="bg-warning align-self-start">hello</p>
           <p class="bg-info">hello</p>
+          <p class="bg-info">hello</p>
+          <p class="bg-info">hello</p>
           <p class="bg-success align-self-end">hello</p>
         </div>
       </div>
       <br />
       <br />
       <br />
-      <!--reminder: In BS, the row class is by default a flexbox container -->
+      <!--reminder: In BS, the row class is a flexbox container by default, no need to add "d-flex" -->
       <div class="row justify-content-center align-items-end">
         <div class="col-4 bg-primary">
-          <p>
+          <p class="text-light">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est omnis,
             hic necessitatibus quisquam fuga excepturi.
           </p>

@@ -30,22 +30,22 @@
 
     <div class="container">
       <div class="row">
-        <div class="col bg-secondary">this is a single column</div>
+        <div class="col bg-secondary">A column inside a regular container</div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
         <!--because there are only two divs each div spans for 6 grid columns since 12/2 = 6-->
-        <div class="col bg-info">this is a single column</div>
-        <div class="col bg-warning">this is a single column</div>
+        <div class="col bg-info">A column inside a container fluid</div>
+        <div class="col bg-warning">A column inside a container fluid</div>
       </div>
     </div>
     <div class="container-fluid">
       <div class="row">
         <!-- three divs means 12/3 = 4, thus each div spans over 4 grid columns -->
-        <div class="col bg-warning">this is a single column</div>
-        <div class="col bg-primary">this is a single column</div>
-        <div class="col bg-success">this is a single column</div>
+        <div class="col bg-warning">A column inside a container fluid</div>
+        <div class="col bg-primary">A column inside a container fluid</div>
+        <div class="col bg-success">A column inside a container fluid</div>
       </div>
     </div>
     <div class="container-fluid">
@@ -106,9 +106,20 @@
           col-sm-3 non-fluid
           <div class="row">
             <!-- the aspect size is relative to its parent element -->
-            <div class="col-sm-6 bg-info">col-sm6</div>
-            <div class="col-sm-6 bg-secondary">col-sm6</div>
+            <div class="col-sm-6 bg-info">col-sm6 (NESTED)</div>
+            <div class="col-sm-6 bg-secondary">col-sm6 (NESTED)</div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- width monitor -->
+    <div class="container">
+      <div class="row m-5">
+        <div class="col text-uppercase font-weight-bold">
+          <p class="text-center text-primary bg-dark display-4">
+            Window width: <span id="width"></span>
+          </p>
         </div>
       </div>
     </div>
@@ -116,6 +127,9 @@
     <!-- The available aspect classes are .col-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 
     <!-- Optional JavaScript -->
+
+    <script src="width monitor.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
