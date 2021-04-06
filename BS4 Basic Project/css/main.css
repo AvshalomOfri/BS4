@@ -6,9 +6,18 @@ body {
 .height {
   min-height: 100vh;
 }
+.height-80 {
+  min-height: 80vh;
+}
 
 .title-underline {
   width: 300px;
   height: 10px;
   margin: 0 auto;
+}
+.about-picture {
+  background: url(../img/about-hero.jpg) center/cover fixed;
+  /* background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
 }
