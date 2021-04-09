@@ -44,7 +44,26 @@ body {
 /* #filler {
   background: url(../img/grand-canyon.jpg) center/cover fixed;
 } */
-#filler {
+
+#filler,
+#progress {
   background: linear-gradient(rgba(62, 162, 202, 0.5), rgba(255, 0, 0, 0.25)),
     url(../img/grand-canyon.jpg) center/cover fixed;
 }
+
+/* .blog-projects{
+
+} */
+
+/* .img-fluid {
+  background: linear-gradient(rgba(62, 162, 202, 0.95), rgba(255, 0, 0, 0.5));
+  height: 40vh;
+  width: 100%;
+} */
+/* @media screen and (max-width: 750px) {
+  /* from 500px and up */
+/* .img-fluid {
+    width: 100%;
+    height: 32vh;
+  } */
+/* } */
